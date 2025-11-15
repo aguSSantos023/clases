@@ -1,0 +1,15 @@
+<div class="relative orbit-container size-52 mb-10">
+
+  @for (name of icons(); track name) {
+    <app-btn-press-c
+      typeValue="icon"
+      [iconName]="name"
+      [style]="getIconStyle($index)"
+      [sizeValueSVG]="3"
+      [sizeValueIcon]="4"
+      [onPressFn]="handlePress.bind(this, name)"
+      class="absolute orbital-item"
+    />
+  }
+
+</div>
