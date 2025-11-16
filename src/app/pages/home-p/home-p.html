@@ -2,8 +2,23 @@
   class="min-h-screen bg-background-c"
   >
 
-  <app-hero-c />
+  <app-menu-overlay-c #overlay />
+
+  <app-btn-press-c
+    #menuBtn
+    typeValue="icon"
+    iconName="menu"
+    [sizeValueSVG]="2"
+    [sizeValueIcon]="2"
+    [onPressFn]="toggleMenu"
+    class="fixed top-3 left-3 z-50"
+  />
 
 
+  <app-hero-c
+    id="hero"
+  />
 
+
+  <section class="h-screen bg-red-500" id="for"></section>
 </main>

@@ -1,0 +1,33 @@
+[
+  {
+    "label": "Inicio",
+    "page": "home",
+    "section": "hero"
+  },
+  {
+    "label": "Para quien",
+    "page": "home",
+    "section": "for"
+  },
+  {
+    "label": "Metodología",
+    "page": "home",
+    "section": "methodology"
+  },
+  {
+    "label": "Profesor",
+    "page": "home",
+    "section": "teacher"
+  },
+
+  {
+    "label": "Contacto",
+    "page": "contact",
+    "section": "hero"
+  },
+  {
+    "label": "Preguntas",
+    "page": "contact",
+    "section": "FAQ"
+  }
+]

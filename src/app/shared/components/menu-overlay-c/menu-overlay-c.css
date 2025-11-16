@@ -1,0 +1,23 @@
+
+.circle-scale {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: explode .4s ease-out forwards;
+}
+
+.circle-scale.closing {
+  animation: implode .4s ease-in forwards;
+}
+
+@keyframes explode {
+  from { width: 1px; height: 1px; }
+  to { width: 300vmax; height: 300vmax; }
+}
+
+@keyframes implode {
+  from { width: 300vmax; height: 300vmax; }
+  to { width: 1px; height: 1px; }
+}

@@ -1,1 +1,15 @@
-<p>contact-p works!</p>
+
+<app-menu-overlay-c #overlay />
+
+  <app-btn-press-c
+    #menuBtn
+    typeValue="icon"
+    iconName="menu"
+    [sizeValueSVG]="2"
+    [sizeValueIcon]="2"
+    [onPressFn]="toggleMenu"
+    class="fixed top-3 left-3 z-50"
+  />
+
+<section class="h-screen bg-amber-400" id="hero"></section>
+<section class="h-screen bg-amber-700" id="FAQ"></section>

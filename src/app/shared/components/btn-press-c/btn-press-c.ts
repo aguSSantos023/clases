@@ -106,6 +106,5 @@ export class BtnPressC {
     const fn = this.onPressFn()
     if(fn) fn()
 
-
   }
 }

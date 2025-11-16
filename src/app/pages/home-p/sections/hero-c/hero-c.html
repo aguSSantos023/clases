@@ -1,37 +1,29 @@
 <section
-    class="h-screen flex flex-col justify-end items-center gap-10"
+  class="h-screen flex flex-col justify-end items-center gap-10"
+  >
+
+
+
+  <app-ring-c
+    (selectedColor)="onColorChange($event)"
+  />
+
+
+
+  <h1
+    class="font-stack-notch-f text-4xl text-center text-dark-c"
     >
-
-    <app-btn-press-c
-      typeValue="icon"
-      iconName="menu"
-      [sizeValueSVG]="2"
-      [sizeValueIcon]="2"
-      class="fixed top-3 left-3"
-    />
+    Iníciate en el mundo de la informática y crece sin límites
+  </h1>
 
 
+  <app-btn-press-c
+    typeValue="text"
+    text="Reservar Clase"
+    [color]="btnTextColor()"
+    [paddingText]="[32, 8]"
+    class="font-stack-notch-f text-background-c
+    font-extrabold text-3xl mb-12"
+  />
 
-    <app-ring-c
-      (selectedColor)="onColorChange($event)"
-    />
-
-
-
-    <h1
-      class="font-stack-notch-f text-4xl text-center"
-      >
-      Iníciate en el mundo de la informática y crece sin límites
-    </h1>
-
-
-    <app-btn-press-c
-      typeValue="text"
-      text="Reservar Clase"
-      [color]="btnTextColor()"
-      [paddingText]="[32, 8]"
-      class="font-stack-notch-f text-background-c
-      font-extrabold text-3xl mb-12"
-    />
-
-  </section>
+</section>

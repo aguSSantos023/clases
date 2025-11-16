@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 @font-face {
   font-family: Stack-Sans-Notch;
   src: url('./app/assets/fonts/stack-sans-notch/StackSansNotch-VariableFont_wght.ttf') format('truetype');
@@ -9,8 +14,12 @@
   font-display: swap;
 }
 
+
+
 @theme {
   --color-background-c: #f8fafc;
+  --color-dark-c: #222831;
+
   --color-blue-one-c: #00aeef;
   --color-blue-two-c: #0077b6;
   --color-green-one-c: #2ecc71;
