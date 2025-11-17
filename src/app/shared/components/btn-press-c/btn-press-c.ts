@@ -1,23 +1,7 @@
 import { Component, computed, input, signal } from '@angular/core';
 import { Colors } from '../../interface/colors';
 import { IconName } from './icon-btn-interface';
-
-interface ColorMap {
-  top: string;
-  bottom: string;
-}
-
-const SHADES: Record<Colors, ColorMap> = {
-  red: { top: 'bg-red-one-c', bottom: 'bg-red-two-c' },
-  blue: { top: 'bg-blue-one-c', bottom: 'bg-blue-two-c' },
-  green: { top: 'bg-green-one-c', bottom: 'bg-green-two-c' },
-  pink: { top: 'bg-pink-one-c', bottom: 'bg-pink-two-c' },
-  violet: { top: 'bg-violet-one-c', bottom: 'bg-violet-two-c' },
-  yellow: { top: 'bg-yellow-one-c', bottom: 'bg-yellow-two-c' },
-  turquoise: { top: 'bg-turquoise-one-c', bottom: 'bg-turquoise-two-c' },
-  orange: { top: 'bg-orange-one-c', bottom: 'bg-orange-two-c' },
-  grey: { top: 'bg-grey-one-c', bottom: 'bg-grey-two-c' },
-};
+import { getColorShades } from '../../utils/colors-map';
 
 @Component({
   selector: 'app-btn-press-c',
@@ -59,7 +43,7 @@ export class BtnPressC {
   colorClass = computed(() => {
     const colorBtn = this.typeValue() === 'text' ? this.color() : this.setIconColor();
 
-    return SHADES[colorBtn];
+    return getColorShades(colorBtn);
   });
 
   dimensions = computed(() => {

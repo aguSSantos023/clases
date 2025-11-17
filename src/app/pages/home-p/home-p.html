@@ -17,8 +17,14 @@
 
   <app-hero-c
     id="hero"
+    (sendColorPress)="getColorPress($event)"
   />
 
 
-  <section class="h-screen bg-red-500" id="for"></section>
+  <app-for-whom-c
+    id="forWhom"
+    [colorPress]="colorPress()"
+  />
+
+
 </main>

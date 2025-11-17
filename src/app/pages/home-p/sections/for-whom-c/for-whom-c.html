@@ -1,0 +1,51 @@
+<section class="min-h-screen flex flex-col justify-center items-center pt-16">
+
+  <header class="text-center font-stack-notch-f mb-12">
+    <h2
+      class="text-4xl mx-10"
+      >
+      ¿Para quién son las clases?
+    </h2>
+    <p class="mt-3 text-lg mx-5">
+      Clases particulares personalizadas para cada etapa de tu vida.
+      Desde los primeros pasos en tecnología hasta la especialización profesional.
+    </p>
+  </header>
+
+
+  <main>
+    @for (card of itemsForCards(); track card.title) {
+
+      <app-for-whom-card-c [itemForCard]="card" />
+
+    }
+  </main>
+
+  <footer
+    [class]="colorClass().one.bg"
+    class="px-8 py-5 font-stack-notch-f
+    flex flex-col justify-center items-center text-background-c"
+    >
+    <h3
+      class="text-2xl font-bold mb-3"
+      >
+      ¿No encuentras tu perfil?
+    </h3>
+
+    <p class="text-center">
+      Cada persona es única. Hablemos sobre tus necesidades y diseñaremos
+      un plan de clases completamente personalizado para ti.
+    </p>
+
+    <app-btn-press-c
+      typeValue="text"
+      color="white"
+      text="Contáctame Ahora"
+      [class]="colorClass().one.text"
+      class="font-stack-notch-f
+      font-extrabold text-xl mt-5"
+    />
+
+  </footer>
+
+</section>

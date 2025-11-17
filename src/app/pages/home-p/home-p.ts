@@ -2,16 +2,20 @@ import { Component, ElementRef, signal, ViewChild } from '@angular/core';
 import { HeroC } from "./sections/hero-c/hero-c";
 import { BtnPressC } from "../../shared/components/btn-press-c/btn-press-c";
 import { MenuOverlayC } from "../../shared/components/menu-overlay-c/menu-overlay-c";
+import { ForWhomC } from "./sections/for-whom-c/for-whom-c";
+import { Colors } from '../../shared/interface/colors';
 
 @Component({
   selector: 'app-home-p',
-  imports: [HeroC, BtnPressC, MenuOverlayC],
+  imports: [HeroC, BtnPressC, MenuOverlayC, ForWhomC],
   templateUrl: './home-p.html',
   styleUrl: './home-p.css',
 })
 export class HomeP {
 
   isAnimatingMenu = signal<boolean>(false)
+  colorPress = signal<Colors>('blue')
+
 
 
   @ViewChild('overlay') overlay!: MenuOverlayC;
@@ -42,5 +46,10 @@ export class HomeP {
     setTimeout(() => this.isAnimatingMenu.set(false) , 550);
   }
 
+
+
+  getColorPress(color: Colors){
+    this.colorPress.set(color)
+  }
 
 }

@@ -3,14 +3,14 @@
 
   <div
     (click)="onPress()"
-    class="relative cursor-pointer "
+    class="relative cursor-pointer"
     [style.width.px]="typeValue() === 'icon' ? dimensions()?.outerW : null"
     [style.height.px]="typeValue() === 'icon' ? dimensions()?.outerH : null"
   >
 
     <div
       [class.is-pressed]="isPressed()"
-      [class]="colorClass().top"
+      [class]="colorClass().one.bg"
       class="part-a absolute rounded-lg z-20 flex justify-center items-center text-nowrap"
 
       [style.width.px]="typeValue() === 'icon' ? dimensions()?.topW : null"
@@ -266,7 +266,7 @@
     </div>
 
     <div
-      [class]="colorClass().bottom"
+      [class]="colorClass().two.bg"
       class="absolute rounded-lg"
       [style.marginTop.px]="6"
 
@@ -286,7 +286,7 @@
 
     <div
       [class.is-pressed]="isPressed()"
-      [class]="colorClass().top"
+      [class]="colorClass().one.bg"
       class="part-a absolute z-20 rounded-lg flex justify-center items-center transition-colors duration-300"
 
       [style.width.px]="typeValue() === 'icon' ? dimensions()?.topW : null"
@@ -302,7 +302,7 @@
     </div>
 
     <div
-      [class]="colorClass().bottom"
+      [class]="colorClass().two.bg"
       class="absolute rounded-lg transition-colors duration-100"
       [style.marginTop.px]="6"
 

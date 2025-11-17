@@ -1,0 +1,58 @@
+[
+  {
+    "title": "Niños",
+    "subtitle": "Descubre la tecnologia jugando",
+    "color": "blue",
+    "description": "Clases diseñadas para despertar la curiosidad tecnológica de los más pequeños. Aprenderán las bases de la programación de forma divertida y práctica.",
+    "rangeAge": "8 - 12 años",
+    "listLearn": [
+      "Introducción a la lógica de programación con juegos interactivos",
+      "Creación de pequeñas páginas web con colores y diseños propios",
+      "Desarrollo de juegos sencillos para entender cómo funciona la tecnología",
+      "Sesiones cortas y dinámicas adaptadas a su capacidad de atención"
+    ]
+  },
+  {
+    "title": "Jovenes",
+    "subtitle": "Domina tu formación profesional",
+    "color": "violet",
+    "description": "Apoyo especializado para estudiantes de Microinformática, DAW y DAM. Preparación técnica completa para superar tus módulos y prácticas.",
+    "rangeAge": "12 - 30 años",
+    "listLearn": [
+      "HTML5 semántico, CSS3 avanzado (Flexbox, Grid, animaciones)",
+      "JavaScript vanilla y frameworks modernos (Angular, React)",
+      "Backend con PHP y Node.js",
+      "Bases de datos relacionales (MySQL, PostgreSQL) y NoSQL (MongoDB)",
+      "Control de versiones con Git y GitHub",
+      "Preparación para prácticas de empresa: proyectos reales y portfolio"
+    ]
+  },
+  {
+    "title": "Adultos",
+    "subtitle": "Impulsa tu Carrera Profesional",
+    "color": "green",
+    "description": "Desde herramientas de oficina hasta programación aplicada. Todo lo que necesitas para mejorar tu desempeño laboral o cambiar de sector.",
+    "rangeAge": "18 - 64 años",
+    "listLearn": [
+      "Ofimática: Word avanzado, PowerPoint impactante, Excel con fórmulas",
+      "Automatización de tareas repetitivas para ahorrar tiempo",
+      "Programación básica aplicada a tu trabajo (Python, JavaScript)",
+      "Creación de presentaciones profesionales y documentos",
+      "Herramientas de productividad digital y organización"
+    ]
+  },
+  {
+    "title": "Personas Mayores",
+    "subtitle": "Tecnología sin complicaciones",
+    "color": "orange",
+    "description": "Aprende a usar la tecnología del día a día con paciencia, claridad y a tu propio ritmo. Nunca es tarde para conectar con el mundo digital.",
+    "rangeAge": "55+ años",
+    "listLearn": [
+      "Uso completo de tu móvil: llamadas, mensajes, WhatsApp y aplicaciones",
+      "Correo electrónico: enviar, recibir y adjuntar fotos",
+      "Navegar por internet de forma segura: compras online, trámites y entretenimiento",
+      "Videollamadas para estar cerca de tu familia y amigos",
+      "Ritmo personalizado y explicaciones claras, las veces que haga falta"
+    ]
+  }
+]

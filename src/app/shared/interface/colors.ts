@@ -3,4 +3,4 @@ export type Colors =
 'green'     | 'pink'  |
 'violet'    | 'yellow'|
 'turquoise' | 'orange'|
-'grey'
+'grey'      | 'white'

@@ -1,6 +1,6 @@
 import { Component, inject, signal } from '@angular/core';
 import { Router } from '@angular/router';
-import itemsJson from '../../../data/menu-items-d.json'
+import menuItemsJson from '../../../data/menu-items-d.json'
 import { ItemsNav } from './items-nav-interface';
 
 
@@ -25,7 +25,7 @@ export class MenuOverlayC {
   circleX = signal(0);
   circleY = signal(0);
 
-  menuItems = signal<ItemsNav[]>(itemsJson as ItemsNav[]);
+  menuItems = signal<ItemsNav[]>(menuItemsJson as ItemsNav[]);
 
 
 
