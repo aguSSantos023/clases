@@ -4,10 +4,11 @@ import { BtnPressC } from "../../shared/components/btn-press-c/btn-press-c";
 import { MenuOverlayC } from "../../shared/components/menu-overlay-c/menu-overlay-c";
 import { ForWhomC } from "./sections/for-whom-c/for-whom-c";
 import { Colors } from '../../shared/interface/colors';
+import { CourseC } from "./sections/course-c/course-c";
 
 @Component({
   selector: 'app-home-p',
-  imports: [HeroC, BtnPressC, MenuOverlayC, ForWhomC],
+  imports: [HeroC, BtnPressC, MenuOverlayC, ForWhomC, CourseC],
   templateUrl: './home-p.html',
   styleUrl: './home-p.css',
 })
@@ -20,6 +21,7 @@ export class HomeP {
 
   @ViewChild('overlay') overlay!: MenuOverlayC;
   @ViewChild('menuBtn', { read: ElementRef }) menuBtn!: ElementRef;
+
 
   toggleMenu = () => {
 

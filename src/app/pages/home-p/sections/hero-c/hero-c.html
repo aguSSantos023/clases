@@ -1,29 +1,34 @@
 <section
-  class="h-screen flex flex-col justify-end items-center gap-10"
+  class="h-screen flex flex-col justify-center items-center gap-16"
   >
-
-
 
   <app-ring-c
     (selectedColor)="onColorChange($event)"
+    class="mt-10"
   />
 
 
-
-  <h1
-    class="font-stack-notch-f font-bold text-4xl text-center text-dark-c"
+  <div
+    class="flex flex-col justify-center items-center gap-8"
     >
-    Iníciate en el mundo de la informática y crece sin límites
-  </h1>
+
+    <h1
+      class="font-stack-notch-f font-bold text-4xl text-center text-dark-c"
+      >
+      Iníciate en el mundo de la informática y crece sin límites
+    </h1>
 
 
-  <app-btn-press-c
-    typeValue="text"
-    text="Reservar Clase"
-    [color]="colorPress()"
-    [paddingText]="[32, 8]"
-    class="font-stack-notch-f text-background-c
-    font-extrabold text-3xl mb-12"
-  />
+    <app-btn-press-c
+      typeValue="text"
+      text="Reservar Clase"
+      [color]="colorPress()"
+      [paddingText]="[32, 8]"
+      class="font-stack-notch-f text-background-c
+      font-extrabold text-3xl mb-12"
+    />
+
+  </div>
+
 
 </section>
