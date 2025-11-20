@@ -14,6 +14,7 @@ export class BtnPressC {
   typeValue = input<'icon' | 'text'>('text');
   iconName = input<IconName>();
   text = input<string>('');
+  href = input<string | null>(null);
   paddingText = input<number[]>([16, 8])
   color = input<Colors>('blue');
   sizeValueIcon = input<1 | 2 | 3 | 4 | 5>(4);

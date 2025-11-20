@@ -5,10 +5,11 @@ import { MenuOverlayC } from "../../shared/components/menu-overlay-c/menu-overla
 import { ForWhomC } from "./sections/for-whom-c/for-whom-c";
 import { Colors } from '../../shared/interface/colors';
 import { CourseC } from "./sections/course-c/course-c";
+import { TeacherC } from "./sections/teacher-c/teacher-c";
 
 @Component({
   selector: 'app-home-p',
-  imports: [HeroC, BtnPressC, MenuOverlayC, ForWhomC, CourseC],
+  imports: [HeroC, BtnPressC, MenuOverlayC, ForWhomC, CourseC, TeacherC],
   templateUrl: './home-p.html',
   styleUrl: './home-p.css',
 })

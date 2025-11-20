@@ -1,5 +1,5 @@
 <main
-  class="min-h-screen bg-background-c"
+  class="min-h-screen bg-background-c mb-10"
   >
 
   <app-menu-overlay-c #overlay />
@@ -31,4 +31,40 @@
     [colorPress]="colorPress()"
   />
 
+
+  <app-teacher-c
+    id="teacher"
+    [colorPress]="colorPress()"
+  />
+
 </main>
+
+
+<footer
+  class="bg-dark-c px-5 py-10  text-white text-center font-stack-notch-f"
+  >
+
+
+  <div class="mb-8">
+    <h2 class="text-3xl font-bold mx-2 mb-2">
+      ¿Listo para Aprender de Verdad?
+    </h2>
+
+    <p>
+      No más tutoriales confusos ni teoría sin aplicación.
+      Aprende haciendo, entiende cada concepto y construye
+      proyectos reales desde el primer día.
+    </p>
+  </div>
+
+
+
+  <app-btn-press-c
+    [paddingText]="[30, 8]"
+    [color]="colorPress()"
+    text="Reservar Clase"
+    class="text-2xl"
+  />
+
+
+</footer>
