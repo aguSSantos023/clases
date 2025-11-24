@@ -1,7 +1,8 @@
-import { Component, output, signal } from '@angular/core';
+import { Component, inject, output, signal } from '@angular/core';
 import { BtnPressC } from "../../../../shared/components/btn-press-c/btn-press-c";
 import { RingC } from "./ring-c/ring-c";
 import { Colors } from '../../../../shared/interface/colors';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hero-c',
@@ -13,7 +14,7 @@ export class HeroC {
 
   sendColorPress = output<Colors>();
   colorPress = signal<Colors>('blue');
-
+  private router = inject(Router);
 
   onColorChange(color: Colors){
 
@@ -21,5 +22,8 @@ export class HeroC {
     this.sendColorPress.emit(color)
   }
 
+  goToContact = () => {
+    this.router.navigate(['/contact'], { fragment: 'hero' });
+  }
 
 }

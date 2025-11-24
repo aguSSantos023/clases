@@ -24,10 +24,5 @@
     "label": "Contacto",
     "page": "contact",
     "section": "hero"
-  },
-  {
-    "label": "Preguntas",
-    "page": "contact",
-    "section": "FAQ"
   }
 ]

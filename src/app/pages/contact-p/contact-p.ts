@@ -44,4 +44,24 @@ export class ContactP {
   }
 
 
+
+  goToWhatsApp = () => {
+    window.open('https://wa.me/34613006029', '_blank');
+  }
+
+  sendEmail = () => {
+    window.location.href = 'mailto:prietoatienzaagus@gmail.com';
+  }
+
+  goToInstagram = () => {
+    window.open('https://instagram.com/agus.santos23', '_blank');
+  }
+
+  copyToClipboard(text: string) {
+    navigator.clipboard.writeText(text);
+    alert('Copiado al portapapeles');
+  }
+
+
+
 }

@@ -5,7 +5,7 @@ import { BtnPressC } from "../../../../shared/components/btn-press-c/btn-press-c
 
 
 
-
+type ColorPair = { top: string; bot: string };
 
 @Component({
   selector: 'app-teacher-c',
@@ -65,58 +65,48 @@ export class TeacherC {
 
 
 
-  techColors: Record<string, string> = {
-    // --- Web frameworks ---
-    Angular: 'from-red-500 to-red-600',
-    'Express.js': 'from-gray-600 to-gray-700',
-    Laravel: 'from-red-600 to-orange-600',
-    React: 'from-blue-500 to-cyan-500',
-    'Node.js': 'from-green-600 to-green-700',
-    PHP: 'from-purple-500 to-purple-600',
-    JavaScript: 'from-yellow-500 to-yellow-600',
-    TypeScript: 'from-blue-600 to-blue-700',
-    MySQL: 'from-blue-400 to-blue-500',
-    MongoDB: 'from-green-500 to-green-600',
+  techColors: Record<string, ColorPair> = {
+    'Angular': { top: 'bg-red-500', bot: 'bg-red-700' },
+    'React': { top: 'bg-cyan-500', bot: 'bg-cyan-700' },
+    'Vue': { top: 'bg-emerald-500', bot: 'bg-emerald-700' },
+    'Svelte': { top: 'bg-orange-500', bot: 'bg-orange-700' },
+    'Qwik': { top: 'bg-blue-500', bot: 'bg-blue-700' },
 
-    // --- Frontend / diseño ---
-    HTML: 'from-orange-500 to-orange-600',
-    CSS: 'from-blue-500 to-blue-600',
-    Tailwind: 'from-teal-400 to-cyan-500',
-    Bootstrap: 'from-purple-600 to-purple-700',
-    PrimeNG: 'from-indigo-500 to-indigo-600',
-    jQuery: 'from-sky-500 to-sky-600',
+    'Express.js': { top: 'bg-gray-600', bot: 'bg-gray-800' },
+    'Laravel': { top: 'bg-red-600', bot: 'bg-red-800' },
+    'Node.js': { top: 'bg-green-600', bot: 'bg-green-800' },
+    'PHP': { top: 'bg-indigo-500', bot: 'bg-indigo-700' },
+    'JavaScript': { top: 'bg-yellow-400', bot: 'bg-yellow-600' },
+    'TypeScript': { top: 'bg-blue-600', bot: 'bg-blue-800' },
+    'Java': { top: 'bg-red-700', bot: 'bg-red-900' },
 
-    // --- Arte y herramientas ---
-    Godot: 'from-blue-400 to-blue-600',
-    Krita: 'from-pink-500 to-purple-500',
-    Inkscape: 'from-gray-700 to-gray-900',
-    Blender: 'from-orange-500 to-yellow-500',
-    Penpot: 'from-emerald-500 to-teal-600',
+    'MySQL': { top: 'bg-sky-500', bot: 'bg-sky-700' },
+    'MongoDB': { top: 'bg-green-500', bot: 'bg-green-700' },
+    'JWT': { top: 'bg-pink-500', bot: 'bg-pink-700' },
+    'JSON': { top: 'bg-gray-500', bot: 'bg-gray-700' },
 
-    // --- Backend extra ---
-    CodeIgniter: 'from-red-600 to-orange-700',
-    Ionic: 'from-blue-500 to-blue-700',
+    'HTML': { top: 'bg-orange-600', bot: 'bg-orange-800' },
+    'CSS': { top: 'bg-blue-500', bot: 'bg-blue-700' },
+    'Tailwind': { top: 'bg-teal-400', bot: 'bg-teal-600' },
+    'Bootstrap': { top: 'bg-purple-600', bot: 'bg-purple-800' },
+    'PrimeNG': { top: 'bg-indigo-400', bot: 'bg-indigo-600' },
 
-    // --- Control de versiones ---
-    Git: 'from-orange-600 to-orange-700',
-    GitHub: 'from-gray-700 to-black',
+    'jQuery': { top: 'bg-blue-700', bot: 'bg-blue-900' },
+    'Git': { top: 'bg-orange-600', bot: 'bg-orange-800' },
+    'GitHub': { top: 'bg-gray-800', bot: 'bg-black' },
+    'Postman': { top: 'bg-orange-500', bot: 'bg-orange-700' },
 
-    // --- Virtualización ---
-    VirtualBox: 'from-blue-600 to-blue-800',
+    'Godot': { top: 'bg-blue-400', bot: 'bg-blue-600' },
+    'Krita': { top: 'bg-pink-400', bot: 'bg-pink-600' },
+    'Inkscape': { top: 'bg-slate-700', bot: 'bg-slate-900' },
+    'Blender': { top: 'bg-orange-400', bot: 'bg-orange-600' },
+    'Penpot': { top: 'bg-teal-500', bot: 'bg-teal-700' },
 
-    // --- Sistemas ---
-    Windows: 'from-blue-500 to-blue-600',
-    Linux: 'from-yellow-500 to-yellow-700',
-
-    // --- Herramientas Dev ---
-    JWT: 'from-green-500 to-green-600',
-    JSON: 'from-orange-500 to-orange-600',
-    Postman: 'from-orange-500 to-orange-600',
-
-    // --- Lenguajes extra ---
-    Java: 'from-red-500 to-red-700',
+    'CodeIgniter': { top: 'bg-red-500', bot: 'bg-red-700' },
+    'Ionic': { top: 'bg-blue-500', bot: 'bg-blue-700' },
+    'VirtualBox': { top: 'bg-blue-600', bot: 'bg-blue-800' },
+    'Windows': { top: 'bg-blue-500', bot: 'bg-blue-700' },
+    'Linux': { top: 'bg-yellow-600', bot: 'bg-yellow-800' },
   };
-
-
 
 }

@@ -194,7 +194,7 @@
         class="flex items-center gap-3 mb-5"
         >
 
-        <div class="size-10 bg-blue-200 flex justify-center items-center rounded-xl">
+        <div class="size-10 bg-blue-one-c flex justify-center items-center rounded-xl">
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -202,7 +202,7 @@
             height="24"
             viewBox="0 0 24 24"
             fill="none"
-            stroke="#00aeef"
+            stroke="#fff"
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
@@ -240,15 +240,22 @@
       <p>Herramientas modernas y profesionales que enseño en mis clases</p>
     </header>
 
-    <div class="flex flex-wrap justify-center gap-2">
+    <div class="flex flex-wrap justify-center gap-4">
 
       @for (tech of techList; track tech) {
-        <div
-          class="px-4 py-1 bg-linear-to-r text-white rounded-full font-semibold tracking-wider
-          text-lg shadow-lg hover:shadow-xl transform hover:scale-110 transition-all duration-300"
-          [class]="techColors[tech]"
-        >
-          {{ tech }}
+        <div class="relative inline-block select-none transition-transform hover:-translate-y-1 duration-200">
+
+          <div
+            class="relative z-20 px-4 py-1 rounded-lg text-white font-bold tracking-wider border-b-2 border-black/10"
+            [class]="techColors[tech].top">
+            {{ tech }}
+          </div>
+
+          <div
+            class="absolute top-0 left-1 w-full h-full rounded-lg z-10 mt-1"
+            [class]="techColors[tech].bot">
+          </div>
+
         </div>
       }
 
