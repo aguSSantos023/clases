@@ -11,6 +11,7 @@ import { getColorShades } from '../../../../../shared/utils/colors-map';
 export class CourseCardC {
 
   itemCourseCard = input.required<ItemCourseCard>()
+  isFullWidth = input<boolean>(false);
 
   colorClass = computed(() => getColorShades(this.itemCourseCard().color))
 

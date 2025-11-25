@@ -18,11 +18,16 @@
     "technologies": [
       "Scratch",
       "HTML",
-      "CSS"
+      "CSS",
+      "Lógica",
+      "Juegos",
+      "Bloques",
+      "Diseño",
+      "PC Básico"
     ]
   },
   {
-    "title": "Desarrollo de Videojuegos 2D/3D",
+    "title": "Desarrollo de Videojuegos",
     "subtitle": "Crea tus juegos desde cero",
     "point": {
       "level": "Intermedio",
@@ -45,7 +50,8 @@
       "Inkscape",
       "Krita",
       "Blender",
-      "Diseño",
+      "Sprites",
+      "Animación",
       "2D",
       "3D"
     ]
@@ -77,7 +83,8 @@
       "Express",
       "PHP",
       "Laravel",
-      "CodeIgniter"
+      "API REST",
+      "Git"
     ]
   },
   {
@@ -104,11 +111,11 @@
       "Angular",
       "React",
       "Node.js",
-      "Express",
       "PHP",
       "MySQL",
       "MongoDB",
-      "Git"
+      "Git",
+      "Docker"
     ]
   },
   {
@@ -130,8 +137,14 @@
     "technologies": [
       "Hardware",
       "BIOS",
-      "Diagnóstico",
-      "Elementos"
+      "Windows",
+      "CPU",
+      "RAM",
+      "GPU",
+      "SSD/HDD",
+      "Drivers",
+      "Montaje",
+      "Voltaje"
     ]
   },
   {
@@ -149,16 +162,22 @@
       "Circuitos básicos: serie, paralelo y mixtos",
       "Fuentes de alimentación y transformadores",
       "Protección de circuitos: fusibles, interruptores diferenciales",
-      "Aplicación práctica en Arduino, Raspberry Pi"
+      "Aplicación práctica en Arduino, Raspberry"
     ],
     "technologies": [
       "Circuitos",
       "Arduino",
-      "Raspberry Pi"
+      "Raspberry",
+      "LEDs",
+      "Sensores",
+      "Soldadura",
+      "Ley Ohm",
+      "Multímetro",
+      "Protos"
     ]
   },
   {
-    "title": "Ofimática y Teléfonos para Mayores",
+    "title": "Tecnología para Mayores",
     "subtitle": "Tecnología sin complicaciones",
     "point": {
       "level": "Iniciación",
@@ -175,11 +194,15 @@
       "Videollamadas para conectar con tus seres queridos"
     ],
     "technologies": [
-      "Word",
-      "PowerPoint",
+      "Móvil",
       "WhatsApp",
       "Email",
-      "WEB"
+      "Word",
+      "Internet",
+      "Fotos",
+      "Youtube",
+      "Zoom",
+      "Seguridad"
     ]
   },
   {
@@ -192,22 +215,25 @@
     "color": "violet",
     "description": "Paquete intensivo que te transforma en un profesional completo. Desde entender la electricidad hasta programar aplicaciones o videojuegos. Una formación 360° en tecnología.",
     "listLearn": [
-      "Módulo 1: Electricidad y electrónica básica aplicada",
-      "Módulo 2: Hardware - montaje, componentes y diagnóstico de PCs",
-      "Módulo 3: Uso profesional del ordenador y ofimática avanzada",
-      "Módulo 4: Programación desde cero (Python, JavaScript)",
-      "Módulo 5A: Desarrollo Web - frontend y backend completo",
-      "Módulo 5B: Desarrollo de videojuegos con Godot",
+      "M. 1: Electricidad y electrónica básica aplicada",
+      "M. 2: Hardware - montaje, componentes y diagnóstico",
+      "M. 3: Uso profesional del ordenador y ofimática avanzada",
+      "M. 4: Programación desde cero (Python, JavaScript)",
+      "M. 5A: Desarrollo Web - frontend y backend completo",
+      "M. 5B: Desarrollo de videojuegos con Godot",
       "Proyecto final integrador: construye tu propia aplicación o juego"
     ],
     "technologies": [
-      "Electricidad",
-      "Hardware",
-      "Ofimática",
       "Python",
       "JavaScript",
-      "WEB",
-      "Videojuegos"
+      "HTML/CSS",
+      "Godot",
+      "Hardware",
+      "Excel",
+      "Linux",
+      "Terminal",
+      "Redes",
+      "Ofimática"
     ]
   }
 ]

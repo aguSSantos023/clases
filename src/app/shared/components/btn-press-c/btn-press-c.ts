@@ -17,8 +17,8 @@ export class BtnPressC {
   href = input<string | null>(null);
   paddingText = input<number[]>([16, 8])
   color = input<Colors>('blue');
-  sizeValueIcon = input<1 | 2 | 3 | 4 | 5>(4);
-  sizeValueSVG = input<1 | 2 | 3 | 4 | 5>(3);
+  sizeValueIcon = input<1 | 2 | 3 | 4 | 5 | 6 | 7>(4);
+  sizeValueSVG = input<1 | 2 | 3 | 4 | 5 | 6 | 7>(3);
 
   canPress = input<boolean>(true);
   onPressFn = input<() => void>();
@@ -32,8 +32,10 @@ export class BtnPressC {
     1: 24,
     2: 28,
     3: 32,
-    4: 36,
+    4: 36, // Móvil grande
     5: 42,
+    6: 56, // Nuevo: Tablet/PC pequeño
+    7: 72, // Nuevo: PC (bastante más grande)
   };
 
   // ---- Computed ----
