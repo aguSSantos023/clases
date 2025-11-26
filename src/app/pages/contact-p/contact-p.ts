@@ -54,7 +54,7 @@ export class ContactP {
   }
 
   goToInstagram = () => {
-    window.open('https://instagram.com/agus.santos23', '_blank');
+    window.open('https://instagram.com/agussantos89', '_blank');
   }
 
   copyToClipboard(text: string) {
