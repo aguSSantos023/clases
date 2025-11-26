@@ -6,12 +6,12 @@ export const routes: Routes = [
   {
     path: '',
     component: HomeP,
-    title: 'Clases - Inicio'
+    title: 'Clases Particulares de Informática - Inicio'
   },
   {
     path: 'contact',
     component: ContactP,
-    title: 'Clases - Contacto'
+    title: 'Clases Particulares de Informática - Contacto'
   },
   {
     path: '**',
