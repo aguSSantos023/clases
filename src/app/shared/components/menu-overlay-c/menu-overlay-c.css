@@ -1,0 +1,89 @@
+
+.circle-scale {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  animation: explode .4s ease-out forwards;
+}
+
+.circle-scale.closing {
+  animation: implode .4s ease-in forwards;
+}
+
+@keyframes explode {
+  from { width: 1px; height: 1px; }
+  to { width: 300vmax; height: 300vmax; }
+}
+
+@keyframes implode {
+  from { width: 300vmax; height: 300vmax; }
+  to { width: 1px; height: 1px; }
+}
+
+
+@keyframes slideUpFade {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-enter {
+  opacity: 0; /* Oculto inicialmente */
+  animation: slideUpFade 0.4s ease-out forwards;
+}
+
+
+
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0); /* Relativo a su top: 100vh */
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh); /* Subir mucho más arriba */
+    opacity: 0;
+  }
+}
+
+.bubble {
+  position: absolute;
+  top: 100vh; /* IMPORTANTE: Inician abajo de la pantalla */
+  border-radius: 50%;
+  animation-name: float-up;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  pointer-events: none; /* Asegura que no bloqueen clicks */
+}
+
+
+.nav-item {
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Efecto rebote suave */
+  opacity: 0.9;
+}
+
+.nav-item:hover {
+  opacity: 1;
+  transform: scale(1.15);
+  text-shadow: 0 0 20px var(--glow-main), 0 0 40px var(--glow-sec);
+  letter-spacing: 2px;
+}
+
+ul:hover .nav-item:not(:hover) {
+  opacity: 0.4;
+  filter: blur(1px);
+  transform: scale(0.95);
+}

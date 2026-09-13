@@ -1,0 +1,45 @@
+<section
+  class="h-screen flex flex-col justify-center items-center gap-16"
+  >
+
+  <app-ring-c
+    (selectedColor)="onColorChange($event)"
+    class="mt-10"
+  />
+
+
+  <div
+    class="flex flex-col justify-center items-center gap-8"
+    >
+
+    <div class="font-stack-notch-f  text-center text-dark-c">
+      <h1
+        class="text-4xl mb-2 font-bold"
+        >
+        Clases Particulares de Informática en Jerez y Online
+      </h1>
+
+      <!-- <h2
+        class="text-3xl"
+        >
+        Iníciate en el mundo de la informática y crece sin límites
+      </h2> -->
+
+    </div>
+
+
+
+    <app-btn-press-c
+      [onPressFn]="goToContact"
+      typeValue="text"
+      text="Reservar Clase"
+      [color]="colorPress()"
+      [paddingText]="[32, 8]"
+      class="font-stack-notch-f text-background-c
+      font-extrabold text-3xl mb-12"
+    />
+
+  </div>
+
+
+</section>

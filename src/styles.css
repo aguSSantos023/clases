@@ -1,3 +1,44 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
+
+@font-face {
+  font-family: Stack-Sans-Notch;
+  src: url('./app/assets/fonts/stack-sans-notch/StackSansNotch-VariableFont_wght.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@theme {
+  --color-background-c: #f8fafc;
+  --color-dark-c: #222831;
+
+  --color-blue-one-c: #00aeef;
+  --color-blue-two-c: #0077b6;
+
+  --color-green-one-c: #2ecc71;
+  --color-green-two-c: #1e8449;
+  --color-yellow-one-c: #ffd93d;
+  --color-yellow-two-c: #c9a200;
+  --color-pink-one-c: #ff6fae;
+  --color-pink-two-c: #b84a76;
+  --color-violet-one-c: #a66bff;
+  --color-violet-two-c: #6b3fa0;
+  --color-red-one-c: #ff6b6b;
+  --color-red-two-c: #c23636;
+  --color-turquoise-one-c: #2ed6c4;
+  --color-turquoise-two-c: #1a9388;
+  --color-orange-one-c: #ffa94d;
+  --color-orange-two-c: #c26e00;
+  --color-grey-one-c: #bfc5ce;
+  --color-grey-two-c: #58616e;
+
+  --font-stack-notch-f: "Stack-Sans-Notch", sans-serif;
+}

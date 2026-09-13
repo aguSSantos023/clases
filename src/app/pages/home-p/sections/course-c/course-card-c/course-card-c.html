@@ -1,0 +1,90 @@
+<div
+  class="relative p-3 lg:p-5 border-2 rounded-lg m-5 lg:m-0
+  font-stack-notch-f h-full flex flex-col justify-start"
+  [class]="colorClass().one.border"
+>
+
+  <div>
+    <header class="mb-3">
+      <h3 class="text-2xl lg:text-3xl font-bold">
+        {{ itemCourseCard().title }}
+      </h3>
+
+      <h4 [class]="colorClass().two.text" class="text-sm lg:text-base">
+        {{ itemCourseCard().subtitle }}
+      </h4>
+
+      <div class="flex gap-5 mt-2 text-sm lg:text-base text-background-c ml-1">
+        <div class="relative inline-block">
+          <div [class]="colorClass().one.bg" class="px-2 py-0.5 rounded-lg relative z-30">
+            {{ itemCourseCard().point.level }}
+          </div>
+          <div [class]="colorClass().two.bg" class="absolute inset-0 rounded-lg translate-y-0.5 translate-x-0.5 z-0"></div>
+        </div>
+
+        <div class="relative inline-block ">
+          <div [class]="colorClass().one.bg" class="px-2 py-0.5 rounded-lg relative z-30">
+            {{ itemCourseCard().point.duration }}
+          </div>
+          <div [class]="colorClass().two.bg" class="absolute inset-0 rounded-lg translate-y-0.5 translate-x-0.5 z-0"></div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <p
+        class="mb-5 mr-3 text-base lg:text-lg"
+        [class.lg:h-28]="!isFullWidth()">
+        {{ itemCourseCard().description }}
+      </p>
+
+      <div class="mb-5">
+        <h5 class="mb-3 flex justify-start items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#222831" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-chart-bar-popular">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <path d="M3 13a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v6a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+            <path d="M9 9a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v10a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+            <path d="M15 5a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v14a1 1 0 0 1 -1 1h-4a1 1 0 0 1 -1 -1z" />
+            <path d="M4 20h14" />
+          </svg>
+          <span class="ml-1 text-lg lg:text-xl font-bold">Contenido del Curso</span>
+        </h5>
+
+        <ul
+          [class.lg:h-60]="!isFullWidth()"
+          class="ml-2 mt-2 space-y-1 text-sm lg:text-base"
+          >
+          @for (item of itemCourseCard().listLearn; track $index) {
+            <li class="relative pl-6 before:absolute before:left-0 before:top-1.5 before:size-2.5 before:rounded-full before:bg-grey-one-c before:z-10 after:absolute after:left-px after:top-[7px] after:size-2.5 after:rounded-full after:bg-grey-two-c">
+              {{ item }}
+            </li>
+          }
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <div>
+    <h5 class="mb-3 flex justify-start items-center">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#222831" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-device-laptop">
+        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <path d="M3 19l18 0" />
+        <path d="M5 6m0 1a1 1 0 0 1 1 -1h12a1 1 0 0 1 1 1v8a1 1 0 0 1 -1 1h-12a1 1 0 0 1 -1 -1z" />
+      </svg>
+      <span class="ml-1 text-lg lg:text-xl font-bold">Tecnologias</span>
+    </h5>
+
+    <div class="ml-1 flex flex-wrap gap-2">
+      @for (technology of itemCourseCard().technologies; track $index) {
+        <span
+          [class]="colorClass().one.border"
+          class="border-2 w-[90px] py-0.5 rounded-lg text-center text-sm
+          lg:text-base lg:w-[102px]"
+          >
+          {{ technology }}
+        </span>
+      }
+    </div>
+  </div>
+
+</div>

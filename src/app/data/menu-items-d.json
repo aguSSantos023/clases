@@ -1,0 +1,28 @@
+[
+  {
+    "label": "Inicio",
+    "page": "home",
+    "section": "hero"
+  },
+  {
+    "label": "Para quien",
+    "page": "home",
+    "section": "forWhom"
+  },
+  {
+    "label": "Cursos",
+    "page": "home",
+    "section": "course"
+  },
+  {
+    "label": "Profesor",
+    "page": "home",
+    "section": "teacher"
+  },
+
+  {
+    "label": "Contacto",
+    "page": "contact",
+    "section": "hero"
+  }
+]

@@ -1,0 +1,49 @@
+@if (isOpen()) {
+  <div class="fixed inset-0 z-40 overflow-hidden pointer-events-none">
+
+    <div
+      class="circle-scale bg-dark-c"
+      [class.closing]="isClosing()"
+      [style.left.px]="circleX()"
+      [style.top.px]="circleY()"
+    ></div>
+
+    @if (showMenu()) {
+
+      <div class="absolute inset-0 z-0 overflow-hidden">
+        @for (b of bubbles(); track $index) {
+          <div
+            class="bubble"
+            [style.background-color]="'var(' + b.colorVar + ')'"
+            [style.box-shadow]="'0 6px 0 var(' + b.shadowVar + ')'"
+            [style.width.px]="b.size"
+            [style.height.px]="b.size"
+            [style.left.%]="b.left"
+            [style.animation-duration.s]="b.duration"
+            [style.animation-delay.s]="b.delay"
+          ></div>
+        }
+      </div>
+
+      <nav
+        class="fixed inset-0 flex items-center justify-center pointer-events-auto"
+        >
+        <ul
+          class="flex flex-col gap-10 text-5xl font-semibold font-stack-notch-f text-background-c text-center"
+          [style.--glow-main]="glowColors().main"
+          [style.--glow-sec]="glowColors().secondary"
+          >
+
+          @for (item of menuItems(); track item.label; let i = $index) {
+            <li
+              (click)="goTo(item.page, item.section)"
+              class="nav-item animate-enter cursor-pointer"
+              [style.animation-delay.ms]="i * 50">
+              {{ item.label }}
+            </li>
+          }
+        </ul>
+      </nav>
+    }
+  </div>
+}

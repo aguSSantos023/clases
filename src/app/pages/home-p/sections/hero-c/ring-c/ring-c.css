@@ -1,0 +1,26 @@
+@keyframes orbit {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes counter-rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(-360deg); }
+}
+
+.orbit-container {
+    animation: orbit 64s linear infinite;
+}
+
+.orbital-item {
+    animation: counter-rotate 64s linear infinite;
+}
+
+
+.orbit-container:hover {
+  animation-play-state: paused;
+}
+
+.orbit-container:hover .orbital-item {
+  animation-play-state: paused;
+}

@@ -1,0 +1,49 @@
+<section class="min-h-screen flex flex-col justify-center items-center pt-16">
+
+  <header class="text-center font-stack-notch-f mb-12 max-w-3xl mx-auto">
+    <h2 class="text-4xl mx-8">Oferta de Cursos</h2>
+    <p class="mt-3 text-lg mx-5">
+      Formación completa y personalizada. Desde tus primeros
+      pasos hasta la especialización profesional.
+    </p>
+  </header>
+
+  <main class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-5xl lg:mx-auto lg:px-4 mb-16">
+
+    @for (card of itemsCoursesCards(); track card.title; let i = $index) {
+
+      <app-course-card-c
+        [itemCourseCard]="card"
+        class="h-full"
+        [class.lg:col-span-2]="i === 2 || i === 5"
+        [isFullWidth]="i === 2 || i === 5"
+      />
+    }
+
+  </main>
+
+  <footer
+    [class]="colorClass().one.bg"
+    class="px-8 py-10 font-stack-notch-f flex flex-col justify-center items-center text-background-c w-full lg:max-w-4xl lg:mx-auto lg:rounded-2xl lg:mb-10"
+  >
+    <h3 class="text-center text-2xl lg:text-3xl font-bold mb-1">
+      ¿Necesitas un curso personalizado?
+    </h3>
+
+    <p class="text-center max-w-xl lg:text-lg">
+
+      Puedo adaptar el contenido a tus necesidades específicas.
+      Combina módulos, ajusta el ritmo o crea tu propio itinerario formativo.
+    </p>
+
+    <app-btn-press-c
+      [onPressFn]="goToContact"
+      typeValue="text"
+      color="white"
+      text="Prepara tu Curso"
+      [class]="colorClass().one.text"
+      class="font-stack-notch-f font-extrabold text-xl mt-6"
+    />
+  </footer>
+
+</section>

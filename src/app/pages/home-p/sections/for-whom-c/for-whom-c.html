@@ -1,0 +1,44 @@
+<section class="min-h-screen flex flex-col pt-16">
+
+  <!-- Header: Añadido max-w-2xl y mx-auto para que el texto no se desparrame en PC -->
+  <header class="text-center font-stack-notch-f mb-12 max-w-3xl mx-auto">
+    <h2 class="text-4xl mx-10">
+      ¿Para quién son las clases?
+    </h2>
+    <p class="mt-3 text-lg mx-5">
+      Clases particulares personalizadas para cada etapa de tu vida.
+      Desde los primeros pasos en tecnología hasta la especialización profesional.
+    </p>
+  </header>
+
+
+  <main class="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full max-w-5xl mx-auto px-4 mb-16">
+    @for (card of itemsForCards(); track card.title) {
+      <app-for-whom-card-c [itemForCard]="card" class="h-full" />
+    }
+  </main>
+
+  <footer
+    [class]="colorClass().one.bg"
+    class="px-8 py-10 font-stack-notch-f flex flex-col justify-center items-center text-background-c w-full lg:max-w-4xl lg:mx-auto lg:rounded-2xl lg:mb-10"
+  >
+    <h3 class="text-2xl lg:text-3xl font-bold mb-1">
+      ¿No encuentras tu perfil?
+    </h3>
+
+    <p class="text-center lg:text-lg max-w-xl">
+      Cada persona es única. Hablemos sobre tus necesidades y diseñaremos
+      un plan de clases completamente personalizado para ti.
+    </p>
+
+    <app-btn-press-c
+      [onPressFn]="goToContact"
+      typeValue="text"
+      color="white"
+      text="Contáctame Ahora"
+      [class]="colorClass().one.text"
+      class="font-stack-notch-f font-extrabold text-xl mt-6"
+    />
+  </footer>
+
+</section>

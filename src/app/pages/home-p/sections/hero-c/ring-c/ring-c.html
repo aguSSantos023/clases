@@ -1,0 +1,18 @@
+<div class="relative orbit-container size-52 lg:size-96 mb-10 transition-all duration-300 ease-out">
+
+  @for (name of icons(); track name) {
+    <app-btn-press-c
+      typeValue="icon"
+      [iconName]="name"
+
+      [style]="getIconStyle($index)"
+
+      [sizeValueSVG]="svgSizeVal()"
+      [sizeValueIcon]="iconSizeVal()"
+
+      [onPressFn]="handlePress.bind(this, name)"
+      class="absolute orbital-item transition-all duration-300 ease-out"
+    />
+  }
+
+</div>
